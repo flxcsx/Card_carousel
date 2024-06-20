@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>User Profiles</h1>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card" dname="John Doe" dtitle="Software Engineer" demail="john.doe@example.com">
+                <img src="john.jpg" alt="Profile Picture">
+                <h2>John</h2>
+                <p>Software Engineer</p>
+            </div>
+            <div class="card" dname="Jane Smith" dtitle="Graphic Designer" demail="jane.smith@example.com">
+                <img src="jane.jpg" alt="Profile Picture">
+                <h2>Jane</h2>
+                <p>Graphic Designer</p>
+            </div>
+            <div class="card" dname="Jim Pekin" dtitle="Product Manager" demail="jim.pekin@example.com">
+                <img src="jim.jpg" alt="Profile Picture">
+                <h2>Jim</h2>
+                <p>Product Manager</p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        <section class="profile-section">
+            <h2>Profile Details</h2>
+            <p><strong>Full Name:</strong> <span id="pname">John Doe</span></p>
+            <p><strong>Job Title:</strong> <span id="ptitle">Software Engineer</span></p>
+            <p><strong>Email:</strong> <span id="pemail">john.doe@example.com</span></p>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

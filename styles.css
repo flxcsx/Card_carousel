@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #85A2AD;
+    min-height: 100vh;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #162227;
+    color: #526F7A;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #BBCCD3;
+    color: #526F7A;
+    border: 1px solid #080808;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section {
+    background: #BBCCD3;
+    color: #526F7A;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.profile-section h2 {
+    margin-top: 0;
+}
+
+.slick-dots {
+    bottom: -40px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #526F7A;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #162227;
+}
+
+/* Tablet (portrait and landscape) */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+
+    .profile-section {
+        width: 90%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .profile-section {
+        width: 100%;
+        padding: 1rem;
+    }
+}
